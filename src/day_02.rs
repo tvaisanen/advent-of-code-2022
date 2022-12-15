@@ -19,6 +19,11 @@ fn result(game: Vec<usize>) -> i32 {
         vec![0, 6, 0, 3], // scissors
     ];
 
+    if (&result_table[game[0]][game[1]] != hands[n]) {
+        println!("{:?} ", hands);
+        panic!("NOT WORKING");
+    }
+
     result_table[game[0]][game[1]] + game[1] as i32
 }
 
